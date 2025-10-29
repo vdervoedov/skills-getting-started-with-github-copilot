@@ -142,3 +142,64 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants list styling */
+.participants-list {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+  font-size: 14px;
+  color: #444;
+}
+
+.participants-list h5 {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #1a237e;
+}
+
+.participants-list ul {
+  /* hide default bullets for a cleaner UI */
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  max-height: 120px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* participant "chip" for nicer visual */
+.participant-chip {
+  display: inline-block;
+  background: linear-gradient(180deg, #ffffff, #f0f4ff);
+  border: 1px solid #e3e7ff;
+  color: #1a237e;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* remove/unregister button next to participant */
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
