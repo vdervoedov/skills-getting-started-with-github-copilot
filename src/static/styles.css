@@ -159,8 +159,10 @@ footer {
 }
 
 .participants-list ul {
-  list-style: disc;
-  margin-left: 18px;
+  /* hide default bullets for a cleaner UI */
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
   max-height: 120px;
   overflow-y: auto;
   padding-right: 6px;
@@ -183,4 +185,21 @@ footer {
   border-radius: 12px;
   font-size: 12px;
   font-weight: 600;
+}
+
+/* remove/unregister button next to participant */
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
